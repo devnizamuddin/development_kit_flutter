@@ -4,12 +4,28 @@ A comprehensive starter kit for Flutter developers designed to accelerate app de
 
 ## Features:
 
+1. ### Architecture
+
 - CLEAN Architecture Example
 
 - SOLID Principle Example
+
+2. ### Utilities
 
 - Isolate Service
 
 - API Service
 
 - Theme Manager
+
+3. ### Testing
+
+- Unit testing
+
+- Widget testing
+
+- Integration testing
+
+4. ### CI/CD
+
+- GitHub Workflow
