@@ -1,4 +1,4 @@
-import 'package:development_kit_flutter/home_page.dart';
+import 'package:development_kit_flutter/features/home/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class DevelopmentKitApp extends StatelessWidget {
