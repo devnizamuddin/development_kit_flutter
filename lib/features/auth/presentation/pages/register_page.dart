@@ -3,17 +3,17 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../config/router/route_names.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(title: const Text('Register')),
       body: Center(
         child: ElevatedButton(
           onPressed: () => context.go(RouteNames.login),
-          child: const Text('Logout'),
+          child: const Text('Back to Login'),
         ),
       ),
     );
