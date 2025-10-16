@@ -15,7 +15,7 @@ part 'widgets/button/outlined_button_theme_data.dart';
 part 'widgets/card_theme.dart';
 part 'widgets/icon_theme_data.dart';
 
-class MsTheme {
+class AppTheme {
   /*
    * ---> Unused variables for input decoration borders. 
    */
@@ -25,60 +25,61 @@ class MsTheme {
       useMaterial3: true,
       colorScheme: const ColorScheme.light(
         // Primary colors
-        primary: MsColor.primary,
-        onPrimary: MsColor.onPrimary,
-        primaryContainer: MsColor.primaryContainer,
-        onPrimaryContainer: MsColor.onPrimaryContainer,
+        primary: AppColors.primary,
+        onPrimary: AppColors.onPrimary,
+        primaryContainer: AppColors.primaryContainer,
+        onPrimaryContainer: AppColors.onPrimaryContainer,
 
         // Secondary colors
-        secondary: MsColor.secondary,
-        onSecondary: MsColor.onSecondary,
-        secondaryContainer: MsColor.secondaryContainer,
-        onSecondaryContainer: MsColor.onSecondaryContainer,
+        secondary: AppColors.secondary,
+        onSecondary: AppColors.onSecondary,
+        secondaryContainer: AppColors.secondaryContainer,
+        onSecondaryContainer: AppColors.onSecondaryContainer,
 
         // Tertiary colors
-        
-        tertiary: MsColor.tertiary,
-        onTertiary: MsColor.onTertiary,
-        tertiaryContainer: MsColor.tertiaryContainer,
-        onTertiaryContainer: MsColor.onTertiaryContainer,
+        tertiary: AppColors.tertiary,
+        onTertiary: AppColors.onTertiary,
+        tertiaryContainer: AppColors.tertiaryContainer,
+        onTertiaryContainer: AppColors.onTertiaryContainer,
 
         // Error colors
-        error: MsColor.error,
-        onError: MsColor.onError,
-        errorContainer: MsColor.errorContainer,
-        onErrorContainer: MsColor.onErrorContainer,
+        error: AppColors.error,
+        onError: AppColors.onError,
+        errorContainer: AppColors.errorContainer,
+        onErrorContainer: AppColors.onErrorContainer,
 
         // Surface colors (for backgrounds, cards, etc.)
-        surface: MsColor.surface,
-        onSurface: MsColor.onSurface,
-        surfaceDim: MsColor.surfaceDim,
-        surfaceBright: MsColor.surfaceBright,
-        surfaceContainerLowest: MsColor.surfaceContainerLowest,
-        surfaceContainerLow: MsColor.surfaceContainerLow,
-        surfaceContainer: MsColor.surfaceContainer,
-        surfaceContainerHigh: MsColor.surfaceContainerHigh,
-        surfaceContainerHighest: MsColor.surfaceContainerHighest,
+        surface: AppColors.surface,
+        onSurface: AppColors.onSurface,
+        surfaceDim: AppColors.surfaceDim,
+        surfaceBright: AppColors.surfaceBright,
+        surfaceContainerLowest: AppColors.surfaceContainerLowest,
+        surfaceContainerLow: AppColors.surfaceContainerLow,
+        surfaceContainer: AppColors.surfaceContainer,
+        surfaceContainerHigh: AppColors.surfaceContainerHigh,
+        surfaceContainerHighest: AppColors.surfaceContainerHighest,
 
         // Other colors
-        onSurfaceVariant: MsColor.onSurfaceVariant,
-        outline: MsColor.outline,
-        outlineVariant: MsColor.outlineVariant,
-        shadow: MsColor.shadow,
-        scrim: MsColor.scrim,
-        inverseSurface: MsColor.inverseSurface,
-        onInverseSurface: MsColor.onInverseSurface,
-        inversePrimary: MsColor.inversePrimary,
-        surfaceTint: MsColor.surfaceTint,
+        onSurfaceVariant: AppColors.onSurfaceVariant,
+        outline: AppColors.outline,
+        outlineVariant: AppColors.outlineVariant,
+        shadow: AppColors.shadow,
+        scrim: AppColors.scrim,
+        inverseSurface: AppColors.inverseSurface,
+        onInverseSurface: AppColors.onInverseSurface,
+        inversePrimary: AppColors.inversePrimary,
+        surfaceTint: AppColors.surfaceTint,
         // Brightness for the color scheme
         brightness: Brightness.light,
       ),
-      scaffoldBackgroundColor: MsColor.background,
+      scaffoldBackgroundColor: AppColors.background,
       tabBarTheme: TabBarThemeData(
         labelColor: Colors.white,
         unselectedLabelColor: Colors.blueGrey.shade200,
-        labelStyle:
-            GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600),
+        labelStyle: GoogleFonts.poppins(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
         unselectedLabelStyle: GoogleFonts.poppins(
           fontSize: 14,
           fontWeight: FontWeight.w600,
@@ -87,17 +88,17 @@ class MsTheme {
         indicatorSize: TabBarIndicatorSize.tab,
       ),
       appBarTheme: MsAppBarTheme.light(),
-      textTheme: MsTextStyle.msTextStyle,
+      textTheme: AppTextStyle.light,
       iconTheme: const MsIconThemeData(),
-      inputDecorationTheme: MsInputDecorationTheme.light(),
+      inputDecorationTheme: AppInputDecorationTheme.light(),
       cardTheme: MsCardTheme(),
       textButtonTheme: msTextButtonTheme,
       bottomNavigationBarTheme:
-          MsBottomNavigationTheme.lightBottomNavigationTheme,
+          AppBottomNavigationTheme.lightBottomNavigationTheme,
       iconButtonTheme: MsIconButtonThemeData.light(),
       elevatedButtonTheme: MsElevatedButtonThemeData(),
       outlinedButtonTheme: MsOutlinedButtonThemeData(),
-      snackBarTheme: MsSnackBarThemeData.light,
+      snackBarTheme: AppSnackBarThemeData.light,
     );
   }
 
@@ -105,21 +106,21 @@ class MsTheme {
     return ThemeData(
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(
-        seedColor: MsColor.primary,
+        seedColor: AppColors.primary,
         brightness: Brightness.dark,
         surface: Colors.grey.shade900,
         onSurface: Colors.white70,
       ),
       appBarTheme: MsAppBarTheme.dark(),
       iconTheme: const MsIconThemeData(),
-      textTheme: MsTextStyle.msTextStyle,
-      inputDecorationTheme: MsInputDecorationTheme.dark(),
+      textTheme: AppTextStyle.dark,
+      inputDecorationTheme: AppInputDecorationTheme.dark(),
       cardTheme: MsCardTheme(),
       textButtonTheme: msTextButtonTheme,
       iconButtonTheme: MsIconButtonThemeData.dark(),
       elevatedButtonTheme: MsElevatedButtonThemeData(),
       outlinedButtonTheme: MsOutlinedButtonThemeData(),
-      snackBarTheme: MsSnackBarThemeData.dark,
+      snackBarTheme: AppSnackBarThemeData.dark,
     );
   }
 }

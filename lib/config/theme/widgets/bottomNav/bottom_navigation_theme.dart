@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../../color.dart';
 
-class MsBottomNavigationTheme {
-  MsBottomNavigationTheme._();
+class AppBottomNavigationTheme {
+  AppBottomNavigationTheme._();
 
   // light mode button theme
   static const lightBottomNavigationTheme = BottomNavigationBarThemeData(
     backgroundColor: Colors.white, // Background color of nav bar
-    selectedItemColor: MsColor.primary,
+    selectedItemColor: AppColors.primary,
     unselectedItemColor: Colors.black,
     selectedIconTheme: IconThemeData(size: 28), // Size for selected icons
     unselectedIconTheme: IconThemeData(size: 24), // Size for unselected icons
@@ -26,13 +26,13 @@ class MsBottomNavigationTheme {
 
   // dark mode button theme
   static const darkBottomNavigationTheme = BottomNavigationBarThemeData(
-    backgroundColor: MsColor.surfaceContainerHighest,
+    backgroundColor: AppColors.surfaceContainerHighest,
     showUnselectedLabels: true,
     elevation: 20,
     unselectedLabelStyle: TextStyle(fontFamily: 'Jost', fontSize: 13),
     unselectedItemColor: Colors.white,
-    selectedItemColor: MsColor.primary,
+    selectedItemColor: AppColors.primary,
     unselectedIconTheme: IconThemeData(color: Colors.white),
-    selectedIconTheme: IconThemeData(color: MsColor.primary),
+    selectedIconTheme: IconThemeData(color: AppColors.primary),
   );
 }

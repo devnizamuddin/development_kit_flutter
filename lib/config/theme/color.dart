@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MsColor {
+class AppColors {
   /*
    * =========================================================================================
    *                                     Full Color Scheme                                    

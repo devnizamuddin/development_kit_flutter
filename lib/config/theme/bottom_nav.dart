@@ -2,30 +2,30 @@ import 'package:flutter/material.dart';
 
 import 'color.dart';
 
-class MsBottomNavigationTheme {
-  MsBottomNavigationTheme._();
+class AppBottomNavigationTheme {
+  AppBottomNavigationTheme._();
 
   // light mode button theme
   static const lightBottomNavigationTheme = BottomNavigationBarThemeData(
-    backgroundColor: MsColor.cardColor,
+    backgroundColor: AppColors.cardColor,
     showUnselectedLabels: true,
     elevation: 20,
     unselectedLabelStyle: TextStyle(fontFamily: 'Jost', fontSize: 13),
-    unselectedItemColor: MsColor.secondary,
-    selectedItemColor: MsColor.primary,
-    unselectedIconTheme: IconThemeData(color: MsColor.secondary),
-    selectedIconTheme: IconThemeData(color: MsColor.primary),
+    unselectedItemColor: AppColors.secondary,
+    selectedItemColor: AppColors.primary,
+    unselectedIconTheme: IconThemeData(color: AppColors.secondary),
+    selectedIconTheme: IconThemeData(color: AppColors.primary),
   );
 
   // dark mode button theme
   static const darkBottomNavigationTheme = BottomNavigationBarThemeData(
-    backgroundColor: MsColor.surfaceContainerHighest,
+    backgroundColor: AppColors.surfaceContainerHighest,
     showUnselectedLabels: true,
     elevation: 20,
     unselectedLabelStyle: TextStyle(fontFamily: 'Jost', fontSize: 13),
     unselectedItemColor: Colors.white,
-    selectedItemColor: MsColor.primary,
+    selectedItemColor: AppColors.primary,
     unselectedIconTheme: IconThemeData(color: Colors.white),
-    selectedIconTheme: IconThemeData(color: MsColor.primary),
+    selectedIconTheme: IconThemeData(color: AppColors.primary),
   );
 }

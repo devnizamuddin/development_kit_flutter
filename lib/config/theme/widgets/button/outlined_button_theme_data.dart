@@ -2,11 +2,13 @@ part of '../../theme.dart';
 
 class MsOutlinedButtonThemeData extends OutlinedButtonThemeData {
   MsOutlinedButtonThemeData()
-      : super(
-            style: OutlinedButton.styleFrom(
-          foregroundColor: MsColor.primary, // Text/icon color
+    : super(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: AppColors.primary, // Text/icon color
           side: const BorderSide(
-              color: MsColor.primary, width: 1.5), // Border color and width
+            color: AppColors.primary,
+            width: 1.5,
+          ), // Border color and width
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12), // Rounded corners
           ),
@@ -15,5 +17,6 @@ class MsOutlinedButtonThemeData extends OutlinedButtonThemeData {
             fontSize: 16,
             fontWeight: FontWeight.w600,
           ),
-        ));
+        ),
+      );
 }
