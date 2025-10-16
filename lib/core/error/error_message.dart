@@ -5,6 +5,13 @@ class ErrorMessage {
 
   ErrorMessage._();
 
+  static const String serverException = 'Server Error';
+  static const String invalidCredentials = 'Invalid credentials';
+  static const String noInternetConnection = 'No internet connection';
+  static const String endPointNotFound = 'End point not found!';
+  static const String invalidStatusCode = 'Invalid Status Code!';
+  static const String invalidRequest = 'Invalid Request';
+
   String fromDioException({required DioException exception}) {
     dynamic errorResponse = exception.response?.data;
     if (errorResponse is Map<String, dynamic>) {
