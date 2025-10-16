@@ -57,3 +57,6 @@ coverage/
 .env
 .env.local
 .env.*.local
+
+# FVM Version Cache
+.fvm/
